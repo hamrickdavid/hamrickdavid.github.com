@@ -1,0 +1,16 @@
+---
+layout: default
+title: David Hamrick
+---
+
+<section id="posts">
+	<h1>posts.</h1>
+	
+	<ul class="posts" style="list-style-type:none;line-height:1.5em;">
+		{% for post in site.posts %}
+			<li><span class="quiet">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url | remove_first:'/' }}">{{ post.title | textilize | remove:'<p>' | remove:'</p>' | remove:'<span class="caps">' | remove:'<span>' | remove:'</span>' }}</a></li>
+		{% endfor %}
+	</ul>
+</section>
+
+
