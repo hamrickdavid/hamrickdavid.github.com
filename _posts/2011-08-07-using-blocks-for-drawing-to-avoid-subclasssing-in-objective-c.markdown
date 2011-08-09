@@ -18,6 +18,6 @@ Using this class in action is easy. Simply instantiate a DrawView object and pas
 
 <script src="https://gist.github.com/1130891.js?file=gistfile1.m"></script>
 
-
+Discussion on <a href="http://www.reddit.com/r/programming/comments/jd04w/using_blocks_for_drawing_to_avoid_subclassing_in/">Reddit</a>
 
 
