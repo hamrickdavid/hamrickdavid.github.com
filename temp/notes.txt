@@ -1,0 +1,6 @@
+# TODO #
+
+- Change over to using menu.js
+- Add screenshots to main screen
+- Add a page for pricing and old downloads
+

@@ -6,9 +6,7 @@
     <title></title>
     <meta name="description" content="App for WiFi scanners from Canon, Epson and HP.">
     <meta name="keywords" content="scanner, scanner software, scanning software, app, Wifi, Canon, Epson, HP">
-    <meta name="viewport" content="width=device-width/">
 	 
-    <link href="bootstrap-1.0.0.min.css" rel="stylesheet">
     <link href="vsmob.css" rel="stylesheet">
     <link rel="canonical" href="http://www.hamrick.com">
     <script type="text/javascript">
@@ -27,9 +25,9 @@
 <div class="topbar">
 	<div class="fill">
 	  <div class="container fixed">
-	    <h3><a class="logo" href="http://www.hamrick.com"><span>VueScan</span></a></h3>
+	    <h3><a class="logo" href="index.html"><span>VueScan</span></a></h3>
 	    <ul>
-	      <li><a href="./">Download</a></li>
+	      <li><a href="index.html">Download</a></li>
 	      <li><a href="reg.html">Purchase</a></li>
 	      <li><a href="rep.html">New Serial</a></li>
 	      <li><a href="sup.html">Support</a></li>
@@ -58,9 +56,9 @@
       <div class="span8 columns">
         <table class="common-table zebra-striped"> 
           <tr> 
-            <th class ="blue"></th> 
-            <th class ="blue" align=left>Standard Edition</th> 
-            <th class ="blue" align=left>Professional Edition</th> 
+            <th></th> 
+            <th align=left>Standard Edition</th> 
+            <th align=left>Professional Edition</th> 
           </tr> 
           <tr> 
             <td>Free upgrade period</td> 
@@ -105,10 +103,6 @@
     <div class="row">
       <div class="span12 columns">
         <div class="well">
-					<div class="alert-message error">
-						<a class="close" href="#">×</a>
-						<p><strong>Oh snap!</strong> Change this and that and try again.</p>
-					</div>
         <form class=fill method="post" action="https://www.hamrick.com/cgi-bin/order.cgi" target="_top"> 
           <fieldset>
             <div class="clearfix">
@@ -123,7 +117,9 @@
             <div class="clearfix">
               <label>Expiration date:</label><div class="input"><input name="ExpirationDate"> <small>example: 12/14 (month/year)</small></div>
             </div>
-            <label>Card Code:</label><div class="input"><input name="CVV" onfocus='document.getElementById("cvv").style.display = "block";' onblur='document.getElementById("cvv").style.display = "none";'> <small>last 3 digits on rear signature strip</small></div>
+            <div class="clearfix">
+            	<label>Card Code:</label><div class="input"><input name="CVV"> <small>last 3 digits on rear signature strip</small></div>
+						</div>
             <div class="clearfix">
               <label>ZIP or Postal code:</label><div class="input"><input name="ZipCode"> <small>example: 85048 or SE12LQ</small></div>
             </div>
