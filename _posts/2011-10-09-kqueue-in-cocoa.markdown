@@ -1,6 +1,6 @@
 --- 
 layout: post 
-title: "Using kQueue in Cocoa"
+title: "Using kqueue in Cocoa"
 ---
 
 I prescribe to the philosophy of keeping details out of code, and so I often use configuration files to organize those details. In Cocoa and Cocoa Touch, that generally means keeping them in a plist, but could easily be JSON, XML, or YAML. 
