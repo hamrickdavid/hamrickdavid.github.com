@@ -44,3 +44,6 @@ After you use it, you need to call `stopWatching` before you release it.
 I've been using this method for some time in both OS X and iOS applications. And while it's not really of any use on iOS since  you can't modify configuration files while it's running, it is very useful to have in the simulator. 
 
 One of the difficulties in using this in Cocoa Touch application is the path to the file you want to modify is actually in your source directory, not in your bundle's directory. So you have to pass in an absolute path instead of a relative one. This becomes a problem when a project is being used on multiple people's machines, all of which keep the project in different locations. I'm still working on a solution to that problem.
+
+
+Discussion on <a href="http://www.reddit.com/r/programming/comments/l6j3g/using_kqueue_in_cocoa/">Reddit</a>
