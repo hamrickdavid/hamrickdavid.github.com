@@ -45,5 +45,8 @@ I've been using this method for some time in both OS X and iOS applications. And
 
 One of the difficulties in using this in Cocoa Touch application is the path to the file you want to modify is actually in your source directory, not in your bundle's directory. So you have to pass in an absolute path instead of a relative one. This becomes a problem when a project is being used on multiple people's machines, all of which keep the project in different locations. I'm still working on a solution to that problem.
 
+Discussion on [Reddit](http://www.reddit.com/r/programming/comments/l6j3g/using_kqueue_in_cocoa/)
 
-Discussion on <a href="http://www.reddit.com/r/programming/comments/l6j3g/using_kqueue_in_cocoa/">Reddit</a>
+## Update ##
+
+It was pointed out to me that using GCD can be a better way to listen for filesystem notifications. I wrote a follow up post that discusses that [here](http://www.davidhamrick.com/2011/10/10/handling-filesystem-events-with-gcd.html).
