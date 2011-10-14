@@ -11,6 +11,7 @@ title: David Hamrick
 			<li><span class="quiet">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url | remove_first:'/' }}">{{ post.title | textilize | remove:'<p>' | remove:'</p>' | remove:'<span class="caps">' | remove:'<span>' | remove:'</span>' }}</a></li>
 		{% endfor %}
 	</ul>
+	<a href="/atom.xml">RSS</a>
 </section>
 
 
