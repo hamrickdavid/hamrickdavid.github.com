@@ -33,7 +33,7 @@ This little trick saved a ton of time re-implenting UINavigationController just 
 
 	@end
 </noscript>
-<script src="https://gist.github.com/1545353.js?file=UINavigationController+Fade.h"></script>
+<script src="https://gist.github.com/1545353.js?file=UINavigationControllerFade.h"></script>
 
 <noscript>
 	@implementation UINavigationController (Fade)
@@ -61,4 +61,4 @@ This little trick saved a ton of time re-implenting UINavigationController just 
 
 	@end
 </noscript>
-<script src="https://gist.github.com/1545353.js?file=UINavigationController+Fade.m"></script>
+<script src="https://gist.github.com/1545353.js?file=UINavigationControllerFade.m"></script>
