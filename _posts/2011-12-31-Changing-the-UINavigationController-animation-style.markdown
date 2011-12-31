@@ -8,14 +8,14 @@ I was working on project recently where I had the requirement to change between 
 Changing the style of the animation turned out to be quite simple. All you need to do is disable animation on the `pushViewController:animated:` method and attach your own CAAnimation.
 
 <noscript>
-    CATransition *transition = [CATransition animation];
-    transition.duration = 0.3f;
-    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    transition.type = kCATransitionFade;
+	CATransition *transition = [CATransition animation];
+	transition.duration = 0.3f;
+	transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+	transition.type = kCATransitionFade;
 	[self.navigationController.view.layer addAnimation:transition forKey:nil];
 	[self.navigationController pushViewController:nextVC animated:NO];
 </noscript>
-<script src="https://gist.github.com/1545353.js?file=gistfile1.m"></script>
+<script src="https://gist.github.com/1545353.js?file=demo.m"></script>
 
 You can pop using the same method by replacing the last method with `popViewControllerAnimated:`
 
