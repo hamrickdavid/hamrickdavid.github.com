@@ -9,7 +9,7 @@ Let's say you have a category that needs to store some information. Unfortunatel
 
 To create an association you use the `objc_setAssociatedObject` function and to retrieve an association use the `objc_getAssociatedObject` method. 
 
-## Making associated references act like properties ##
+## Using an associated reference as storage for a property ##
 
 We can use this technique to make a built in class have a property that we want. In this example, I am storing the name of a style that I want to assign to a UIView.
 
