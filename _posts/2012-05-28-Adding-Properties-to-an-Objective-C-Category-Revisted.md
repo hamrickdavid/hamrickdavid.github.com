@@ -7,7 +7,7 @@ In my [last post](/2012/02/12/Adding-Properties-to-an-Objective-C-Category.html)
 
 Before, when I wanted to add a category I would have to manually add the setter and getter.
 
-	<noscript>
+<noscript>
 	static char kDHStyleKey;
 
 	@interface UIView (DHStyleManager)
@@ -27,12 +27,12 @@ Before, when I wanted to add a category I would have to manually add the setter 
 	}
 
 	@end
-	</noscript>
-	<script src="https://gist.github.com/2820879.js?file=Example1.m"></script>
+</noscript>
+<script src="https://gist.github.com/2820879.js?file=Example1.m"></script>
 	
 Now, all I need to do is use the macro to create the getters and setters.
 
-	<noscript>
+<noscript>
 	@interface UIView (DHStyleManager)
 	@property (nonatomic, copy) NSString* styleName;
 	@end
@@ -41,12 +41,12 @@ Now, all I need to do is use the macro to create the getters and setters.
 	ADD_DYNAMIC_PROPERTY(NSString*,styleName,setStyleName);
 	
 	@end
-	</noscript>
-	<script src="https://gist.github.com/2820879.js?file=Example2.m"></script>
+</noscript>
+<script src="https://gist.github.com/2820879.js?file=Example2.m"></script>
 
 All you need to do to use this macro is put this in a header file.
 
-	<noscript>
+<noscript>
 	#define ADD_DYNAMIC_PROPERTY(PROPERTY_TYPE,PROPERTY_NAME,SETTER_NAME) \
 	@dynamic PROPERTY_NAME ; \
 	static char kProperty##PROPERTY_NAME; \
@@ -59,5 +59,5 @@ All you need to do to use this macro is put this in a header file.
 	{ \
 		objc_setAssociatedObject(self, &kProperty##PROPERTY_NAME , PROPERTY_NAME , OBJC_ASSOCIATION_RETAIN); \
 	} \
-	</noscript>
-	<script src="https://gist.github.com/2820879.js?file=Example3.m"></script>
+</noscript>
+<script src="https://gist.github.com/2820879.js?file=Example3.m"></script>
