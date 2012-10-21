@@ -4,14 +4,15 @@ title: David Hamrick
 ---
 
 <section id="posts">
-	<h1>posts.</h1>
-	
-	<ul class="posts" style="list-style-type:none;line-height:1.5em;">
-		{% for post in site.posts %}
-			<li><span class="quiet">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url | remove_first:'/' }}">{{ post.title | textilize | remove:'<p>' | remove:'</p>' | remove:'<span class="caps">' | remove:'<span>' | remove:'</span>' }}</a></li>
-		{% endfor %}
-	</ul>
-	<a href="/atom.xml">RSS</a>
+  {% for post in site.posts offset: 0 limit:5 %}
+    <h1><a href="{{post.url}}">{{ post.title | strip_html | strip_newlines | textilize | strip_html }}</a></h1>
+    <h4><a href="http://www.twitter.com/davidhamrick">David Hamrick</a> on <time>{{post.date | date_to_long_string}}</time></h4>
+
+    {{post.content}}
+    <br>
+    <hr>
+    <br>
+  {% endfor %}
 </section>
 
 

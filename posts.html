@@ -1,0 +1,12 @@
+---
+layout: default
+title: All Posts
+---
+
+<h1>All Posts</h1>
+<ul>
+  {% for post in site.posts %}
+  
+  <li>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url | remove_first:'/' }}">{{ post.title | textilize | remove:'<p>' | remove:'</p>' | remove:'<span class="caps">' | remove:'<span>' | remove:'</span>' }}</a></li>
+  {% endfor %}
+</ul>
