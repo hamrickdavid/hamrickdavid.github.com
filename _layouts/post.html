@@ -6,7 +6,8 @@ layout: default
 <article>
 
 <h1><a href="{{page.url}}">{{ page.title | strip_html | strip_newlines | textilize | strip_html }}</a></h1>
-<h4><a href="http://www.twitter.com/davidhamrick">David Hamrick</a> on <time>{{page.date | date_to_long_string}}</time></h4>
+<h4>Posted by <a href="http://www.twitter.com/davidhamrick">David Hamrick</a> on <time>{{page.date | date_to_long_string}}</time></h4>
+<br>
 
 {{ content }}
 

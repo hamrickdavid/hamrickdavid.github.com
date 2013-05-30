@@ -12,10 +12,13 @@
     <!--[if lt IE 7]>
     <link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
 
-    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css"/>
+
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.css" type="text/css"/>
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap-responsive.css" type="text/css"/>
+  <link rel="stylesheet" href="/css/flat-ui.css" type="text/css"/>
     <style>
       #mainContainer {
-        margin-top: 80px;
+        margin-top: 60px;
       }
     </style>
     
@@ -27,24 +30,26 @@
       });
     </script>
   </head>
-  <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </a>
-        <a class="brand" href="/">DavidHamrick.com</a>
-        <div class="nav-collapse collapse">
-          <ul class="nav">
-            <li><a href="/posts.html">All Posts</a></li>
-            <li><a href="/atom.xml">RSS</a></li>
-            <li><a href="/about.html">About</a></li>
-          </ul>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="/">DavidHamrick.com</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="/posts.html">All Posts</a></li>
+                <li><a href="/atom.xml">RSS</a></li>
+                <li><a href="/about.html">About</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+
   <div id="mainContainer" class="container">
     {{ content }}
   </div>
