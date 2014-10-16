@@ -10,3 +10,10 @@ title: All Posts
   <li>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url | remove_first:'/' }}">{{ post.title | textilize | remove:'<p>' | remove:'</p>' | remove:'<span class="caps">' | remove:'<span>' | remove:'</span>' }}</a></li>
   {% endfor %}
 </ul>
+
+<br>
+<br>
+<h3>About.</h3>
+<p>
+Hi, I'm <a href="http://www.twitter.com/davidhamrick">David Hamrick</a>. I co-own a small software company called <a href="http://www.hamrick.com/">Hamrick Software</a>. We develop scanning software called VueScan for OS X, Windows, Linux, and iOS.
+</p>
